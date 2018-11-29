@@ -1,0 +1,6 @@
+1.修改batch_size
+    在config/CornerNet.jason中修改"batch_size": 16,  以及"chunk_sizes": [4, 4, 4, 4],
+    把batch: 49分为这么多组       "chunk_sizes": [4, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+2.在没有训练完的情况下使用之前的数据继续训练
+    修改config.py中的line 24  self._configs["pretrain"] = "/media/hp208/4t/zhaoxingjie/CornerNet/weight/CornerNet_10000.pkl"
+3.
