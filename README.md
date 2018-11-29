@@ -82,3 +82,5 @@ To use the multi-scale configuration file:
 ```
 python test.py CornerNet --testiter <iter> --split <split> --suffix multi_scale
 ```
+### demo
+python demo.py CornerNet --testiter 500000 --split <split>
